@@ -1,0 +1,1 @@
+Get-ADUser -Filter {(Enabled -eq $True)} -SearchBase “ou=Users,ou=Denver,dc=spencerfane,dc=com” | Select-Object SamAccountName | Sort-Object SamAccountName
